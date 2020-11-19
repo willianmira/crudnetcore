@@ -6,6 +6,7 @@ using Model.Crud.NetCore.Domain.Interface.Repository;
 using Model.Crud.NetCore.Domain.Interface.Services;
 using Model.Crud.NetCore.Domain.Model;
 using System;
+using System.Collections.Generic;
 using System.Threading.Tasks;
 
 
@@ -26,10 +27,12 @@ namespace Model.Crud.NetCore.Application.Services
             {
                 _logger.LogInformation("Inicio busca lista de clientes");
 
+                var resp = _mapper.Map<IEnumerable<ResponseCliente>>(await _clienteRepository.GetAll());
                 await ObterStatusCode(
                         "Lista de cliente carregada com sucesso.", 
                         StatusCodes.Status200OK,
-                        await _clienteRepository.GetAll());
+                        resp
+                        );
             }
             catch(Exception e) {
                 await ObterStatusCode( 
@@ -49,10 +52,12 @@ namespace Model.Crud.NetCore.Application.Services
                 if ((await ValidarRequest(new GuidValidator(), Id)) != null)
                       return _baseResponse;
 
+                var resp = _mapper.Map<ResponseCliente>(await _clienteRepository.Get(Id));
+                
                     await ObterStatusCode(
                         "Cliente carregado com sucesso.",
                         StatusCodes.Status200OK,
-                        await _clienteRepository.Get(Id));
+                        resp);
             }
             catch (Exception e)
             {
