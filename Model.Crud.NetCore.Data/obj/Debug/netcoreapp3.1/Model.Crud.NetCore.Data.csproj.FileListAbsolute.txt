@@ -1,0 +1,12 @@
+C:\will\crudnetcore\Model.Crud.NetCore.Data\bin\Debug\netcoreapp3.1\Model.Crud.NetCore.Data.deps.json
+C:\will\crudnetcore\Model.Crud.NetCore.Data\bin\Debug\netcoreapp3.1\Model.Crud.NetCore.Data.dll
+C:\will\crudnetcore\Model.Crud.NetCore.Data\bin\Debug\netcoreapp3.1\Model.Crud.NetCore.Data.pdb
+C:\will\crudnetcore\Model.Crud.NetCore.Data\bin\Debug\netcoreapp3.1\Model.Crud.NetCore.Domain.dll
+C:\will\crudnetcore\Model.Crud.NetCore.Data\bin\Debug\netcoreapp3.1\Model.Crud.NetCore.Domain.pdb
+C:\will\crudnetcore\Model.Crud.NetCore.Data\obj\Debug\netcoreapp3.1\Model.Crud.NetCore.Data.csprojAssemblyReference.cache
+C:\will\crudnetcore\Model.Crud.NetCore.Data\obj\Debug\netcoreapp3.1\Model.Crud.NetCore.Data.AssemblyInfoInputs.cache
+C:\will\crudnetcore\Model.Crud.NetCore.Data\obj\Debug\netcoreapp3.1\Model.Crud.NetCore.Data.AssemblyInfo.cs
+C:\will\crudnetcore\Model.Crud.NetCore.Data\obj\Debug\netcoreapp3.1\Model.Crud.NetCore.Data.csproj.CoreCompileInputs.cache
+C:\will\crudnetcore\Model.Crud.NetCore.Data\obj\Debug\netcoreapp3.1\Model.Crud.NetCore.Data.csproj.CopyComplete
+C:\will\crudnetcore\Model.Crud.NetCore.Data\obj\Debug\netcoreapp3.1\Model.Crud.NetCore.Data.dll
+C:\will\crudnetcore\Model.Crud.NetCore.Data\obj\Debug\netcoreapp3.1\Model.Crud.NetCore.Data.pdb

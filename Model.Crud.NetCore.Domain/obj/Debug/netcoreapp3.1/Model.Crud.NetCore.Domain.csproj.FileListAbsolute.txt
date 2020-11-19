@@ -1,0 +1,9 @@
+C:\will\crudnetcore\Model.Crud.NetCore.Domain\bin\Debug\netcoreapp3.1\Model.Crud.NetCore.Domain.deps.json
+C:\will\crudnetcore\Model.Crud.NetCore.Domain\bin\Debug\netcoreapp3.1\Model.Crud.NetCore.Domain.dll
+C:\will\crudnetcore\Model.Crud.NetCore.Domain\bin\Debug\netcoreapp3.1\Model.Crud.NetCore.Domain.pdb
+C:\will\crudnetcore\Model.Crud.NetCore.Domain\obj\Debug\netcoreapp3.1\Model.Crud.NetCore.Domain.AssemblyInfoInputs.cache
+C:\will\crudnetcore\Model.Crud.NetCore.Domain\obj\Debug\netcoreapp3.1\Model.Crud.NetCore.Domain.AssemblyInfo.cs
+C:\will\crudnetcore\Model.Crud.NetCore.Domain\obj\Debug\netcoreapp3.1\Model.Crud.NetCore.Domain.dll
+C:\will\crudnetcore\Model.Crud.NetCore.Domain\obj\Debug\netcoreapp3.1\Model.Crud.NetCore.Domain.pdb
+C:\will\crudnetcore\Model.Crud.NetCore.Domain\obj\Debug\netcoreapp3.1\Model.Crud.NetCore.Domain.csproj.CoreCompileInputs.cache
+C:\will\crudnetcore\Model.Crud.NetCore.Domain\obj\Debug\netcoreapp3.1\Model.Crud.NetCore.Domain.csprojAssemblyReference.cache

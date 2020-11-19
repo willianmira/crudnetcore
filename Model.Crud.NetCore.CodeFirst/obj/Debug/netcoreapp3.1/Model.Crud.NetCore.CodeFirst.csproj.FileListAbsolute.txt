@@ -1,0 +1,12 @@
+C:\will\crudnetcore\Model.Crud.NetCore.CodeFirst\obj\Debug\netcoreapp3.1\Model.Crud.NetCore.CodeFirst.csprojAssemblyReference.cache
+C:\will\crudnetcore\Model.Crud.NetCore.CodeFirst\obj\Debug\netcoreapp3.1\Model.Crud.NetCore.CodeFirst.AssemblyInfoInputs.cache
+C:\will\crudnetcore\Model.Crud.NetCore.CodeFirst\obj\Debug\netcoreapp3.1\Model.Crud.NetCore.CodeFirst.AssemblyInfo.cs
+C:\will\crudnetcore\Model.Crud.NetCore.CodeFirst\obj\Debug\netcoreapp3.1\Model.Crud.NetCore.CodeFirst.csproj.CoreCompileInputs.cache
+C:\will\crudnetcore\Model.Crud.NetCore.CodeFirst\bin\Debug\netcoreapp3.1\Model.Crud.NetCore.CodeFirst.deps.json
+C:\will\crudnetcore\Model.Crud.NetCore.CodeFirst\bin\Debug\netcoreapp3.1\Model.Crud.NetCore.CodeFirst.runtimeconfig.json
+C:\will\crudnetcore\Model.Crud.NetCore.CodeFirst\bin\Debug\netcoreapp3.1\Model.Crud.NetCore.CodeFirst.runtimeconfig.dev.json
+C:\will\crudnetcore\Model.Crud.NetCore.CodeFirst\bin\Debug\netcoreapp3.1\Model.Crud.NetCore.CodeFirst.dll
+C:\will\crudnetcore\Model.Crud.NetCore.CodeFirst\bin\Debug\netcoreapp3.1\Model.Crud.NetCore.CodeFirst.pdb
+C:\will\crudnetcore\Model.Crud.NetCore.CodeFirst\obj\Debug\netcoreapp3.1\Model.Crud.NetCore.CodeFirst.dll
+C:\will\crudnetcore\Model.Crud.NetCore.CodeFirst\obj\Debug\netcoreapp3.1\Model.Crud.NetCore.CodeFirst.pdb
+C:\will\crudnetcore\Model.Crud.NetCore.CodeFirst\obj\Debug\netcoreapp3.1\Model.Crud.NetCore.CodeFirst.genruntimeconfig.cache
