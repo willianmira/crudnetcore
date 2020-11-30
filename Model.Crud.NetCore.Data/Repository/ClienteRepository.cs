@@ -5,6 +5,7 @@ using Model.Crud.NetCore.Domain.Entity;
 using System.Threading.Tasks;
 using System; 
 using System.Collections.Generic;
+using Dapper;
 
 namespace Model.Crud.NetCore.Data.Repository
 {
@@ -16,12 +17,18 @@ namespace Model.Crud.NetCore.Data.Repository
 
         public async Task<Cliente> Post(Cliente entity)
         {
+            var query = @"INSERT INTO  TbCliente (Id, Nome, Idade) values ( @Id, @Nome, @Idade);";
             using (var conn = OpenConn())
             {
-                await conn.InsertAsync<Cliente>(entity);
-            }
+                await conn.ExecuteScalarAsync<int>(query, new
+                {
+                    entity.Id,
+                    entity.Nome,
+                    entity.Idade
+                });
 
-            return entity;
+                return entity; 
+            } 
         }
 
         public async Task<Cliente> Put(Cliente entity)
