@@ -1,4 +1,5 @@
- 
+
+using AutoMapper;
 using Microsoft.Extensions.DependencyInjection; 
 using Model.Crud.NetCore.Application.Services;
 using Model.Crud.NetCore.Data.Repository;
@@ -11,8 +12,14 @@ namespace Model.Crud.NetCore.API.Configuration
     {
         public static IServiceCollection ConfigurarDependencias(this IServiceCollection services)
         {
+            //Service
             services.AddTransient<IClienteService, ClienteService>();
-            services.AddTransient<IClienteRepository, ClienteRepository>(); 
+
+            //Repository
+            services.AddTransient<IClienteRepository, ClienteRepository>();
+
+            //Profile
+            services.AddAutoMapper(typeof(ClienteProfile));
 
             return services;
         }

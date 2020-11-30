@@ -17,7 +17,7 @@ namespace Model.Crud.NetCore.Data.Repository
         public async Task<Cliente> Post(Cliente entity)
         {
             using (var conn = OpenConn())
-            { 
+            {
                 await conn.InsertAsync<Cliente>(entity);
             }
 

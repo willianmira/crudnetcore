@@ -2,6 +2,7 @@
 using Microsoft.AspNetCore.Http;
 using Microsoft.Extensions.Logging;
 using Model.Crud.NetCore.Application.Validators;
+using Model.Crud.NetCore.Domain.Entity;
 using Model.Crud.NetCore.Domain.Interface.Repository;
 using Model.Crud.NetCore.Domain.Interface.Services;
 using Model.Crud.NetCore.Domain.Model;
@@ -78,12 +79,13 @@ namespace Model.Crud.NetCore.Application.Services
                 if ((await ValidarRequest(new ClienteValidator(), request)) != null)
                     return _baseResponse;
 
-                var entity = _mapper.Map<Domain.Entity.Cliente>(request);
+                request.Id = Guid.NewGuid();
+                var entity = _mapper.Map<Cliente>(request);
 
                 await ObterStatusCode(
                     "Cliente carregado com sucesso.",
                     StatusCodes.Status201Created,
-                    await _clienteRepository.Post(entity));
+                    _mapper.Map<ResponseCliente>(await _clienteRepository.Post(entity)));
             }
             catch (Exception e)
             {
@@ -101,13 +103,13 @@ namespace Model.Crud.NetCore.Application.Services
             {
                 _logger.LogInformation("Iniciando cadastro do cliente.");
 
-                if ((await ValidarRequest(new GuidValidator(), request.Id)) != null)
+                if ((await ValidarRequest(new GuidValidator(), (request.Id.HasValue ? request.Id.Value : default))) != null)
                     return _baseResponse;
 
                 if ((await ValidarRequest(new ClienteValidator(), request)) != null)
                     return _baseResponse;
                  
-                var entity = await _clienteRepository.Get(request.Id);
+                var entity = await _clienteRepository.Get(request.Id.Value);
 
                 if(entity != null)
                 {
@@ -117,7 +119,7 @@ namespace Model.Crud.NetCore.Application.Services
                     await ObterStatusCode(
                          "Cliente atualizado com sucesso.",
                          StatusCodes.Status200OK,
-                         await _clienteRepository.Put(entity));
+                         _mapper.Map<ResponseCliente>(await _clienteRepository.Put(entity)));
                 }
                 else
                 {
@@ -154,7 +156,7 @@ namespace Model.Crud.NetCore.Application.Services
                     await ObterStatusCode( 
                          "Cliente atualizado com sucesso.",
                          StatusCodes.Status200OK,
-                         await _clienteRepository.Delete(entity)); 
+                           _mapper.Map<ResponseCliente>(await _clienteRepository.Delete(entity))); 
                 else
                     await ObterStatusCode( 
                         "Cliente informado não localizado.",
